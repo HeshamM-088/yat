@@ -19,7 +19,18 @@ const App = () => {
 
 	const [theme, setTheme] = useState(true);
 
-	const increment = (id) => {};
+
+  const increment = (id) => {
+    const updatedProduct = products.map((product) => {
+      if (product.id == id) {
+        product.count += 1;
+      }
+
+      return product;
+    });
+
+    setProducts(updatedProduct);
+  };
 
 	return (
 		<div className=" text-center space-y-6 bg-white">
@@ -27,6 +38,7 @@ const App = () => {
 			<Items products={products} increment={increment} />
 		</div>
 	);
+
 };
 
 export default App;
