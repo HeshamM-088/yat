@@ -32,8 +32,7 @@ const App = () => {
   };
 
   return (
-    <div className=" text-center space-y-5 bg-white">
-      <Header addedProducts={addedProducts} />
+    <div className=" text-center space-y-5 bg-red-500">
       <Items products={products} increment={increment} />
     </div>
   );
