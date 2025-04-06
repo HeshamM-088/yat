@@ -23,7 +23,7 @@ const App = () => {
   const increment = (id) => {
     const updatedProduct = products.map((product) => {
       if (product.id == id) {
-        product.count += 1;
+        product.count += 2;
       }
 
       return product;
