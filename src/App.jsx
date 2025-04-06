@@ -19,7 +19,17 @@ const App = () => {
 
   const [theme, setTheme] = useState(true);
 
-  const increment = (id) => {};
+  const increment = (id) => {
+    const updatedProduct = products.map((product) => {
+      if (product.id == id) {
+        product.count += 1;
+      }
+
+      return product;
+    });
+
+    setProducts(updatedProduct);
+  };
 
   return (
     <div className=" text-center space-y-5 bg-white">
