@@ -4,7 +4,7 @@ const Header = ({ addedProducts }) => {
 	return (
 		<div className="navbar flex w-full justify-between px-8 items-center  bg-green-600">
 			<div className="">
-				<a className="btn btn-ghost text-xl text-white">Cart</a>
+				<a className="btn btn-ghost text-xl text-white">Cart 2</a>
 			</div>
 
 			<div className="flex gap-10">
